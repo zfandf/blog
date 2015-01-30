@@ -1,0 +1,1 @@
+sass --style compact --sourcemap=none --no-cache -E utf-8 --watch sass/default.scss:css/default.css
