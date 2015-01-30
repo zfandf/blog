@@ -1,5 +1,6 @@
 .idea/
 .deploy/
 public/
+themes/
 node_modules/
 *.log
