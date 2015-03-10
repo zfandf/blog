@@ -1,7 +1,10 @@
 toc: false
 title: JavaScript Base64编码转换
-category: JavaScript
-tag: JavaScript
+date: 2015-01-22 08:40:51
+categories:
+- JavaScript
+tags:
+- JavaScript
 ---
 
 

@@ -60,6 +60,7 @@ fancybox: false
 
 #### Author information
 author:
+
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
   intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
   intro_line2: "" ## eg: "This is my blog,believe it or not."
