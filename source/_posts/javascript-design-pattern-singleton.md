@@ -1,4 +1,4 @@
-title: javascript-design-pattern-singleton
+title: JavaScript 设计模式 -  Singleton (单例) 模式
 date: 2015-03-05 09:04:56
 categories:
 - JavaScript

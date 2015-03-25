@@ -1,6 +1,3 @@
-#一点点说明
-这是 [Fannie](http://blog.fflove.top)的个人博客.
-
 # Fannie love
 ## 2015, 新的开始
 * 一个自己的网站
