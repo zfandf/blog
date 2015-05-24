@@ -21,8 +21,8 @@ var document = window.document,
 	location = window.location;
 var jQuery = (function() {
 
-// Define a local copy of jQuery
-var jQuery = function( selector, context ) {
+	// Define a local copy of jQuery
+	var jQuery = function( selector, context ) {
 		// The jQuery object is actually just the init constructor 'enhanced'
 		return new jQuery.fn.init( selector, context, rootjQuery );
 	},

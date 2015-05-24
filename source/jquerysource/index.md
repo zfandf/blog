@@ -36,3 +36,7 @@ jQuery
 ````
 传入 window 和 undefined 作为参数， 可以缩短访问变量时的作用域链。
 另外，特殊值 undefined 是 window 的一个属性，传入 undefined， 可以保证 undefined 的值是 undefined，防止 undefined 值被重写
+
+jQuery 构造方法
+* 
+jQuery.prototype = jQuery.fn

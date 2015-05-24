@@ -1,4 +1,4 @@
-title: "webcodingstyle"
+title: Web 前端编码规范
 date: 2015-03-27 14:40:21
 tags:
 ---
@@ -121,140 +121,162 @@ HTML 属性应当按照以下给出的顺序依次排列，确保代码的易读
 
 # 前端规范之 css 规范
 
-
-
 多选择器规则之间换行
 当样式针对多个选择器时每个选择器占一行
 
+````
 /* 推荐的写法 */
 a.btn,
 input.btn,
 input[type="button"] {
 ......
 }
-z-index
+````
 
-自己写的z-index的值不能超过 100 (通用组的除外)
-页面中的元素内容的z-index不能超过10(popup poptip除外)，需要按照内容定义1 2 3 4不允许直接使用如1000，9999
-popup poptip的z-index需要按照内容使用 99以下，10以上的值（11,12,13，也可以小于10），不允许直接使用1000，9999之类大值
-css属性顺序
+## z-index
 
-显示属性；
-元素位置；
-元素属性；
-元素内容属性；
-css书写顺序：
+* 自己写的z-index的值不能超过 100 (通用组的除外)
+* 页面中的元素内容的z-index不能超过10(popup poptip除外)，需要按照内容定义1 2 3 4不允许直接使用如1000，9999
+* popup poptip的z-index需要按照内容使用 99以下，10以上的值（11,12,13，也可以小于10），不允许直接使用1000，9999之类大值
+
+## css属性顺序
+
+* 显示属性；
+* 元素位置；
+* 元素属性；
+* 元素内容属性；
+
+## css书写顺序：
 
 例子:
+````
 .header {
- /* 显示属性 */
- display || visibility
- list-style
- position
- top || right || bottom || left
- z-index
- clear
- float
-
- /* 自身属性 */
- width
- max-width || min-width
- height
- max-height || min-height
- overflow || clip
- margin 
- padding
- outline
- border
- background
-
- /* 文本属性 */
- color
- font
- text-overflow
- text-align
- text-indent
- line-height
- white-space
- vertical-align
- cursor
- content
+    /* 显示属性 */
+    display || visibility
+    list-style
+    position
+    top || right || bottom || left
+    z-index
+    clear
+    float
+    
+    /* 自身属性 */
+    width
+    max-width || min-width
+    height
+    max-height || min-height
+    overflow || clip
+    margin 
+    padding
+    outline
+    border
+    background
+    
+    /* 文本属性 */
+    color
+    font
+    text-overflow
+    text-align
+    text-indent
+    line-height
+    white-space
+    vertical-align
+    cursor
+    content
 }
-css写法
+````
 
-小图片（必须）sprite 合并
-每个样式属性后加 ";", 即使最后一个样式后都不要省略 “;”
-禁止将样式写为单行
+## css写法
 
-如
+* 小图片（必须）sprite 合并
+* 每个样式属性后加 ";", 即使最后一个样式后都不要省略 “;”
+* 禁止将样式写为单行
+
+如:
+````
 .hotel-content {margin: 10px; background-color: #efefef;}
-单行显示不好注释，不好备注，这应该是压缩工具的活儿~
-禁止使用行内（inline）样式
+````
 
-禁止使用"*"来选择元素
-
+* 单行显示不好注释，不好备注，这应该是压缩工具的活儿~
+* 禁止使用行内（inline）样式
+* 禁止使用"*"来选择元素
+````
 /*别这样写*/
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
+````
 这样写是没有必要的，一些元素在浏览器中默认有margin或padding值，但是只是部分元素，没有必要将所有元素的margin、padding值都置为0。
 
-带前缀的属性
-当使用特定浏览器带有前缀的属性时，通过缩进的方式，让每个属性的值在垂直方向对齐，这样便于多行编辑。如：
+## 带前缀的属性
 
+当使用特定浏览器带有前缀的属性时，通过缩进的方式，让每个属性的值在垂直方向对齐，这样便于多行编辑。如：
+````
 .selector {
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
             box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
-优化css选择器
-css选择器是从右边到左边进行匹配的。如：
+````
 
+## 优化css选择器
+
+css选择器是从右边到左边进行匹配的。如：
+````
 #header a {
     color: #444;
 }
+````
 浏览器会检查整个文档中的所有链接，然后浏览器并不仅仅检查每个链接的父元素，还要遍历文档树去查找 id 为 header 的祖先元素，如果被评估的链接不是 header 的后代，那么浏览器就要向上一级遍历知道文档的根节点。针对此问题，有以下几个解决方法：
 
-避免使用通配规则
-除了传统意义的通配选择符之外还包括相邻兄弟选择符, 子选择符, 后代选择符和属性选择符。推荐id、class和标签选择符。
-不要限定id选择符
-页面中指定一个id只能对应一个元素，所以没有必要添加额外添加限定符，如： div#header ，应该简化为： #header（提权的除外）。
-不要限定类选择器
-不要用具体的标签限定类选择符，而是根据实际情况对类名进行扩展。例如： ul.recommend ，改成 .recommend-list 或者 .list-recommend。
-让规则越具体越好
-尽量不要使用 ul li a 这样长的选择符，最好使用 .list-anchor 之类的选择符。
-避免使用后代选择符
-通常处理后代选择符开销最高，使用字选择符更高效，最好使用下一条代替。
-避免使用标签子选择符
-如果有如： #header > li > a，这样基于子标签的自选择符，那么应该使用一个class来关联每个元素如： .header-anchor。尽量使用具体的类代替子选择符。
-为了 性能原因 ， 请避免元素选择器和类选择器以及 id 选择器混用;例如
+## 避免使用通配规则
+
+* 除了传统意义的通配选择符之外还包括相邻兄弟选择符, 子选择符, 后代选择符和属性选择符。推荐id、class和标签选择符。
+* 不要限定id选择符
+* 页面中指定一个id只能对应一个元素，所以没有必要添加额外添加限定符，如： div#header ，应该简化为： #header（提权的除外）。
+* 不要限定类选择器
+* 不要用具体的标签限定类选择符，而是根据实际情况对类名进行扩展。例如： ul.recommend ，改成 .recommend-list 或者 .list-recommend。
+* 让规则越具体越好
+* 尽量不要使用 ul li a 这样长的选择符，最好使用 .list-anchor 之类的选择符。
+* 避免使用后代选择符
+* 通常处理后代选择符开销最高，使用字选择符更高效，最好使用下一条代替。
+* 避免使用标签子选择符
+* 如果有如： #header > li > a，这样基于子标签的自选择符，那么应该使用一个class来关联每个元素如： .header-anchor。尽量使用具体的类代替子选择符。
+* 为了 性能原因 ， 请避免元素选择器和类选择器以及 id 选择器混用;例如
 /* 不推荐 */
 ul#example {}
 div.error {}
 /* 推荐 */
 #example {}
 .error {}
+````
 
-前端规范之JavaScript
-命名规范
+# 前端规范之JavaScript
 
-函数命名
-驼峰命名方式
+## 命名规范
 
-function funName() {}
-常量
-大写
+* 函数命名, 驼峰命名方式
 
+````
+function funName() {
+    
+}
+````
+
+* 常量, 大写
+````
 var VARIABLENAME
-变量
-驼峰命名
+````
 
+* 变量, 驼峰命名
+````
 var variableName
-编码规则
+````
 
-排版缩进
-采用统一的缩进方式排版代码。缩进为4个空格
+## 编码规则
 
+* 排版缩进, 采用统一的缩进方式排版代码。缩进为4个空格
+````
 if(condition1 || condition2) {
     action1;
 } else if (condition3 && condition4) {
@@ -262,52 +284,69 @@ if(condition1 || condition2) {
 } else {
     default action;
 }
-关键词、条件括弧后面使用空格；运算操作符号两侧使用空格；语句分割符‘,’后面使用空格
+````
+* 空格, 关键词、条件括弧后面使用空格；运算操作符号两侧使用空格；语句分割符‘,’后面使用空格
 
+````
 var name[空格]=[空格]value;
 if[空格](a,[空格]b) {
 }
-左大括号"{"居行尾，；右大括号"}"单独占一行，居行首
+````
 
+* 左大括号"{"居行尾，；右大括号"}"单独占一行，居行首
+````
 if (a && b) {
     // code
 }
-句末必须用分号结尾
+````
 
+* 句末必须用分号结尾
+````
 var fn = function () {
+
 };//这里没有分号的话，脚本解析器会报错！！！
 (function () {
     alert(1);
 })();
-单行过长应在适当位置予以换行,增强可读性
+````
+* 单行过长应在适当位置予以换行,增强可读性
 
-条件语句括号中的条件若过长， 折行在操作符后进行，折行与首行空出两个Tab。
-字符串过长，这行后以 “+”拼接， 在“+”后折行，折行与首行文字保持纵向对齐。
-
+- 条件语句括号中的条件若过长， 折行在操作符后进行，折行与首行空出两个Tab。
+- 字符串过长，这行后以 “+”拼接， 在“+”后折行，折行与首行文字保持纵向对齐。
+````
 if (condition1 && 
         condition2) { 
     var str = "i am so long, haha haha,haha,haha" + 
               "e , 我是折行，请与上一行的内容保持纵向对齐"
 }
-if、while、for、do语句的执行体总是用"{"和"}"括起来，即使在其结构体内只有一条语句
+````
 
+* if、while、for、do语句的执行体总是用"{"和"}"括起来，即使在其结构体内只有一条语句
+````
 if (s==100) {
     alert('shit!');
 }
-语法意义相互独立的代码将用空行分隔
+````
 
+
+* 语法意义相互独立的代码将用空行分隔
+````
 a++; b++;   //！！！避免同一行书写两个表达式
 if (a > b) {
     value = a;  //行间不用空行间隔
 }
 
 var variableName = value;   //与上一代码行使用空行间隔
-注释规范
+````
 
-文件注释
+## 注释规范
+
+* 文件注释
 
 文件注释要标明作者、文件版本、创建/修改时间、重大版本修改记录
+
 函数描述
+
 文件版本、创建或者修改时间、功能、作者
 
  /**
@@ -316,7 +355,7 @@ var variableName = value;   //与上一代码行使用空行间隔
  */
 函数或者类等都要添加头描述
 
- :::javascript
+````
  /**
  * 简述
  *
@@ -328,51 +367,57 @@ var variableName = value;   //与上一代码行使用空行间隔
  */
  function fooFunction (arg1, arg2) {
  }
-操作注释
+````
+
+* 操作注释
 
 单行注释,写在代码上面
 多行注释
-
+````
 /*
 * 注释操作说明
 */
 for( var i = 0; i < obj.lenght; i++) {
 }
-注释标签参考
+````
 
-标签	描述
-@addon	 把一个函数标记为另一个函数的扩张，另一个函数的定义不在源文件中。
-@argument	 用大括号中的自变量类型描述一个自变量。
-@author	 函数/类作者的姓名。
-@base	 如果类是继承得来，定义提供的类名称。
-@class	 用来给一个类提供描述，不能用于构造器的文档中。
-@constructor	 描述一个类的构造器。
-@deprecated	 表示函数/类已被忽略。
-@exception	 描述函数/类产生的一个错误。
-@exec	
 
-@extends	 表示派生出当前类的另一个类。
-@fileoverview	 表示文档块将用于描述当前文件。这个标签应该放在其它任何标签之前。
-@final	 指出函数/类。
-@ignore	 让jsdoc忽视随后的代码。
-@link	 类似于@link标签，用于连接许多其它页面。
-@member	 定义随后的函数为提供的类名称的一个成员。
-@param	 用大括号中的参数类型描述一个参数。
-@private	 表示函数/类为私有，不应包含在生成的文档中。
-@requires	 表示需要另一个函数/类。
-@return	 描述一个函数的返回值。
-@returns	 描述一个函数的返回值。
-@see	 连接到另一个函数/类。
-@throws	 描述函数/类可能产生的错误。
-@type	 指定函数/成员的返回类型。
-@version	 函数/类的版本号。
-条件判断的陷阱
+### 注释标签参考
+
+- @addon	 把一个函数标记为另一个函数的扩张，另一个函数的定义不在源文件中。
+- @argument	 用大括号中的自变量类型描述一个自变量。
+- @author	 函数/类作者的姓名。
+- @base	 如果类是继承得来，定义提供的类名称。
+- @class	 用来给一个类提供描述，不能用于构造器的文档中。
+- @constructor	 描述一个类的构造器。
+- @deprecated	 表示函数/类已被忽略。
+- @exception	 描述函数/类产生的一个错误。
+- @exec	
+- @extends	 表示派生出当前类的另一个类。
+- @fileoverview	 表示文档块将用于描述当前文件。这个标签应该放在其它任何标签之前。
+- @final	 指出函数/类。
+- @ignore	 让jsdoc忽视随后的代码。
+- @link	 类似于@link标签，用于连接许多其它页面。
+- @member	 定义随后的函数为提供的类名称的一个成员。
+- @param	 用大括号中的参数类型描述一个参数。
+- @private	 表示函数/类为私有，不应包含在生成的文档中。
+- @requires	 表示需要另一个函数/类。
+- @return	 描述一个函数的返回值。
+- @returns	 描述一个函数的返回值。
+- @see	 连接到另一个函数/类。
+- @throws	 描述函数/类可能产生的错误。
+- @type	 指定函数/成员的返回类型。
+- @version	 函数/类的版本号。
+
+## 条件判断的陷阱
 
 在if判断中，使用===作比较,避免掉入==造成的陷阱
 
 在条件判断时，这样的一些值表示false：null，undefined，字符串''，数字0，NaN
+
 而在==时，则会有一些让人难以理解的陷阱,如：
 
+````
 (function () { 
     var undefined; 
     undefined == null; // true 
@@ -384,6 +429,7 @@ for( var i = 0; i < obj.lenght; i++) {
     [] == false; // true 
     [] == ![]; // true 
 })();
+````
 对于不同类型的 == 判断，有这样一些规则，顺序自上而下：
 
 1.undefined与null相等
@@ -392,14 +438,17 @@ for( var i = 0; i < obj.lenght; i++) {
 4.尝试将Object转换成number或string，取决于另外一个对比量的类型
 所以，对于0、空字符串的判断，建议使用 === 。===会先判断两边的值类型，类型不匹配时为false。
 
-简单类型转换
+## 简单类型转换
 
-number to string的转换，建议使用 1 + ''或String(1)，不使用new String(1)或1.toString()的方式。
-string to number的转换，建议使用parseInt，必须显式指定第二个参数的进制。下面的例子展示了不指定进制的风险：
+* number to string的转换，建议使用 1 + ''或String(1)，不使用new String(1)或1.toString()的方式。
+* string to number的转换，建议使用parseInt，必须显式指定第二个参数的进制。下面的例子展示了不指定进制的风险：
 
+````
 parseInt('08'); // 0 
 parseInt('08', 10); //8
-float to integer的转换，建议使用Math.floor/Math.round/Math.ceil方法，不使用parseInt。
+````
+
+* float to integer的转换，建议使用Math.floor/Math.round/Math.ceil方法，不使用parseInt。
 
 字符串拼接
 字符串拼接，应使用数组保存字符串片段，使用时调用join方法。避免使用+或+=的方式拼接较长的字符串，每个字符串都会使用一个小的内存片段，过多的内存片段会影响性能。如:
