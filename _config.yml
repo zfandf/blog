@@ -8,7 +8,7 @@ subtitle:
 description: Fannie 的个人博客, 一个新的开始哦
 author: Fannie
 email: zfandf@163.com
-language: zh
+language: zh-CN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -87,6 +87,7 @@ exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
+## git clone https://github.com/A-limon/pacman.git themes/pacman
 deploy:
   type: github
   repo: https://github.com/zfandf/zfandf.github.io.git
