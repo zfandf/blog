@@ -25,6 +25,10 @@
 
         hexo server
         
+* 生成静态文件
+
+        hexo g
+        
 * 发布
         
         hexo p

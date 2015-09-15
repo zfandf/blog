@@ -1,4 +1,10 @@
-title: 关于 JavaScript arguments.callee
+layout:
+title: 关于 JavaScript arguments.callee	
+date: 2015-01-27 08:40:51
+comments: true
+categories:
+- js
+tags:
 ---
 
 ### 关于 JavaScript arguments.callee

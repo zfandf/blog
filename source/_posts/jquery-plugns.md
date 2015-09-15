@@ -1,4 +1,10 @@
-title: jQuery 自定义插件
+layout:
+title: jQuery 自定义插件	
+date: 2015-01-27 08:40:51
+comments: true
+categories:
+- jquery
+tags:
 ---
 
 ### jQuery 自定义插件

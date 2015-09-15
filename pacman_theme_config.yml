@@ -102,4 +102,9 @@ google_cse:
 ## layout: search 
 ## title: search
 ## ---
+#### 代码高亮
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:
 
