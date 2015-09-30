@@ -89,7 +89,7 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 ## git clone https://github.com/A-limon/pacman.git themes/pacman
 deploy:
-  type: github
+  type: git
   repo: https://github.com/zfandf/zfandf.github.io.git
   branch: master
   message:
