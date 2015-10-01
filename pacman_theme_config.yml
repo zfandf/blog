@@ -1,9 +1,8 @@
 ##### 菜单
 menu:
-  主页: /
-  归档: /archives
-  Demo: /web/
-  GitHub: https://github.com/zfandf/zfandf.github.io
+  主页 | Home: /
+  归档 | Archives: /archives
+  简介 | About: /about
 
 ## 你可以在../source 下创建 'tags'、'categories' 文件夹
 ## 并且为每一个文件夹创建一个 'index.md' 文件
@@ -14,97 +13,111 @@ menu:
 
 #### 组件
 widgets:
-- archive
 - category
 - tag
 - links
 - rss
+
 ## 提供6个组件:category,tag,rss,archive,tagcloud,links.
 ## 修改友链在 `/layout/_widget/links.ejs` 文件中.
 
 #### RSS
-rss: ## RSS address.
+rss: /atom.xml ## RSS address.
 
 #### 图片
 imglogo:
   enable: true             ## 头部 logo 是否显示 true/false.
   src: img/icon.png        ## 图片格式：`.svg` and `.png`, 图片位置在 source/img 中
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.
-apple_icon: img/icon.png ## size:114px*114px,please put image into the theme folder `/pacman/source/img`.
+apple_icon: img/favicon.ico ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+author_img: /img/icon.png   ## size:220px*220px. 显示作者头像. 如果不想显示，请不要设置此项。
+banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
+### Theme Color
+theme_color:
+    theme: '#ea6753'    ##the defaut theme color is blue
 
-#### 作者头像图片
-author_img_enable: true ## 是否显示作者头像
-dataURI: false
-## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
-## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
-author_img_data: ''
-## paste the dataURI in ONE LINE and included it by ''.
-#author_img: img/author.jpg ## size:220px*220px.
-author_img: /img/icon.png ## size:220px*220px. 作者头像
-## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
+#### 文章是否展开
+index:
+  expand: false           ## 默认不展开, 你可以看到每篇文章简短的描述
+  excerpt_link: Read More   ## 展开链接
 
-#### Font
-ShowCustomFont: true
-## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
+#### Author information
+#### 作者信息
+author:
+  intro_line1:  "Hello ,I'm Fannie."    ## 页面底部关于自己的介绍
+  intro_line2:  "This is my blog,believe it or not."  ## 第二行
+  weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo_verifier:     ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
+  email: zfandf@163.com     ## e.g. imjark@gmail.com
+  twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
+  github: https://github.com/zfandf     ## e.g. wuchong for https://github.com/wuchong
+  facebook:   ## e.g. imjark for https://facebook.com/imjark
+  linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
+  google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
+  stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+## if you set them, the corresponding  share button will show on the footer
 
 #### 目录
 toc:
   article: true   ## 在文章中显示目录.
-  aside: false     ## show contents in aside.
-## you can set both of the value to true of neither of them.
-## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
-
-#### Fancybox
-fancybox: false
-## if you use gallery post or want use fancybox please set the value to true.
-## if you want use fancybox in ANY post please copy the file `fancybox.js`.
-## in theme folder `/pacman/scripts` to your hexo blog folder `../scritps`.
-
-#### 作者信息
-author:
-
-  google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "" ## eg: "This is my blog,believe it or not."
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
-  github:     ## e.g. A-limon for https://github.com/A-limon
-  facebook:   ## e.g. yangjian for https://favebook.com/yangjian
-  tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
-  linkedin:   ## e.g. in/jeffweiner08 for https://www.linkedin.com/in/jeffweiner08
+  aside: true     ## 当侧边菜单隐藏时，在侧边栏中显示目录
+#### Links
+links:
+  码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
+  Jark's Blog: http://wuchong.me
 
 #### 评论
-duoshuo: 
+duoshuo:
   enable: true  ## duoshuo.com
   short_name: ffloveblog   ## duoshuo short name.
 
+#### Share button
 #### 分享按钮
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id:    ## e.g. 1501277 your jiathis ID. 
-  tsina: ## e.g. 1664838973 Your weibo id,It will be used in share button.
+  id:    ## e.g. 1889330 your jiathis ID.
+  tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
 
 #### 分析
 google_analytics:
   enable: false
-  id:   ## e.g. UA-1766729-8 your google analytics ID.
-  site: ## e.g. yangjian.me your google analytics site or set the value as auto.
+  id:        ## e.g. UA-46321946-2 your google analytics ID.
+  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+baidu_tongji:
+  enable: false
+  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+cnzz_tongji:
+  enable: false
+  siteid:    ## e.g. 1253575964 your cnzz tongji site id
+
+#### Miscellaneous
+#### 杂项
+ShowCustomFont: true  ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
+fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
+totop: true           ## if you want to scroll to top in every post set the value to true
 
 #### 自定义搜索
-google_cse: 
+google_cse:
   enable: false
-  cx:  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID
-## https://www.google.com/cse/ 
+  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+## https://www.google.com/cse/
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
-## layout: search 
+## layout: search
 ## title: search
 ## ---
-#### 代码高亮
-highlight:
-  enable: true
-  line_number: true
-  tab_replace:
+baidu_search:     ## http://zn.baidu.com/
+  enable: false
+  id:   ## e.g. "783281470518440642"  for your baidu search id
+  site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
+
+tinysou_search:     ## http://tinysou.com/
+  enable: false
+  id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
+
 
