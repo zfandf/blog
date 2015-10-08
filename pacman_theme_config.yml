@@ -1,9 +1,9 @@
 ##### 菜单
 menu:
   主页 | Home: /
+  #索引 | Index: /index
   归档 | Archives: /archives
   简介 | About: /about
-
 ## 你可以在../source 下创建 'tags'、'categories' 文件夹
 ## 并且为每一个文件夹创建一个 'index.md' 文件
 ## 设置 `front-matter`as
@@ -15,11 +15,11 @@ menu:
 widgets:
 - category
 - tag
-- links
-- rss
+- links ## 修改友链在 `/layout/_widget/links.ejs` 文件中.
+#- douban
+#- rss
+## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
-## 提供6个组件:category,tag,rss,archive,tagcloud,links.
-## 修改友链在 `/layout/_widget/links.ejs` 文件中.
 
 #### RSS
 rss: /atom.xml ## RSS address.
@@ -41,8 +41,7 @@ index:
   expand: false           ## 默认不展开, 你可以看到每篇文章简短的描述
   excerpt_link: Read More   ## 展开链接
 
-#### Author information
-#### 作者信息
+#### Author information 作者信息
 author:
   intro_line1:  "Hello ,I'm Fannie."    ## 页面底部关于自己的介绍
   intro_line2:  "This is my blog,believe it or not."  ## 第二行
@@ -64,18 +63,19 @@ author:
 toc:
   article: true   ## 在文章中显示目录.
   aside: true     ## 当侧边菜单隐藏时，在侧边栏中显示目录
+## you can set both of the value to true of neither of them.
+## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
+
 #### Links
 links:
   码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
   Jark's Blog: http://wuchong.me
 
 #### 评论
-duoshuo:
-  enable: true  ## duoshuo.com
-  short_name: ffloveblog   ## duoshuo short name.
+duoshuo_shortname: ffloveblog ## e.g. wuchong   your duoshuo short name.
+disqus_shortname:  ## e.g. wuchong   your disqus short name.
 
-#### Share button
-#### 分享按钮
+#### Share button 分享按钮
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
   id:    ## e.g. 1889330 your jiathis ID.
@@ -95,11 +95,11 @@ cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
 
-#### Miscellaneous
-#### 杂项
+#### Miscellaneous 杂项
 ShowCustomFont: true  ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
 fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
 totop: true           ## if you want to scroll to top in every post set the value to true
+
 
 #### 自定义搜索
 google_cse:
@@ -120,4 +120,10 @@ tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
 
-
+# 代码高亮主题
+# available: default | night
+highlight_theme: night
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:

@@ -3,17 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: FannieLove
-subtitle: 当我停步不前
+title: 初见
+subtitle:
 description: Fannie 的个人博客, 一个新的开始哦
 author: Fannie
-email: zfandf@163.com
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.fflove.top
+url: http://www.fflove.top
 root: /
 permalink: post/:title/
 permalink_defaults:
@@ -62,8 +61,9 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
 theme: jacman
+stylus:
+  compress: true
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -76,7 +76,7 @@ deploy:
 
 # Others
 index_generator:
-  per_page: 3 ##首页默认几篇文章标题 如果值为0不分页
+  per_page: 5 ##首页默认几篇文章标题 如果值为0不分页
 
 archive_generator:
     per_page: 20 ##归档页面默认20篇文章标题
