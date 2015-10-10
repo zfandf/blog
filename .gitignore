@@ -6,3 +6,6 @@ node_modules/
 public/
 .deploy*/
 .idea/
+*.map
+themes/jacman/
+source/25pp/
