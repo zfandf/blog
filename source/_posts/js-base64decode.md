@@ -3,9 +3,9 @@ title: JavaScript Base64编码转换
 date: 2015-01-22 08:40:51
 comments: true
 categories:
-- JavaScript
+- 前端
 tags:	
-- JavaScript
+- js
 ---
 
     var base64EncodeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";

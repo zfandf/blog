@@ -1,9 +1,8 @@
 title: JavaScript 设计模式 - Module (模块) 模式
 date: 2015-02-10 08:42:16
 categories:
-- JavaScript
+- 前端
 tags:
-- JavaScript
 - Javascript Design Pattern
 ---
 

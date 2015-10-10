@@ -93,3 +93,6 @@ feed:
     type: atom ##feed类型 atom或者rss2
     path: atom.xml ##feed路径
     limit: 20  ##feed文章最小数量
+
+skip_render:
+    - '25pp/**'

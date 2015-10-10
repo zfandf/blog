@@ -1,9 +1,8 @@
 title: JavaScript 设计模式 - Revealing Module (揭示模块) 模式
 date: 2015-02-12 08:54:31
 categories:
-- JavaScript
+- 前端
 tags:
-- JavaScript
 - Javascript Design Pattern
 ---
 Revealing Module 模式 是 Module 模式 的改进模式,

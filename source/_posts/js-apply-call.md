@@ -3,8 +3,9 @@ title: 关于 JavaScript 中 apply 和 call
 date: 2015-01-27 08:40:51
 comments: true
 categories:
+- 前端
+tags:
 - js
-tags:	
 ---
 
 

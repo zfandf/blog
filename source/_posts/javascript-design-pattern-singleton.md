@@ -1,9 +1,8 @@
 title: JavaScript 设计模式 -  Singleton (单例) 模式
 date: 2015-03-05 09:04:56
 categories:
-- JavaScript
+- 前端
 tags:
-- JavaScript
 - Javascript Design Pattern
 ---
 单例模式限制了类的实例化次数只能一次. 它的实现是, 在该实例不存在的情况下, 通过一个方法创建一个类来实现创建类的新实例; 如果实例已经存在, 则直接返回该实例的引用.

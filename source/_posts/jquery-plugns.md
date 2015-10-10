@@ -3,8 +3,9 @@ title: jQuery 自定义插件
 date: 2015-01-27 08:40:51
 comments: true
 categories:
-- jquery
+- 前端
 tags:
+- jquery
 ---
 
 ### jQuery 自定义插件

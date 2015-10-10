@@ -1,10 +1,12 @@
 title: 前端工程师喜欢的 chrome 扩展
 date: 2015-10-02 10:14:43
 categories:
-- 前端
+- 工具
 tags:
 ---
-
+# 爬虫 - 抓整站
+* teleport [window/mac(mac 的感觉不好用)]
+* 
 # HTTP Headers - 检查页面的响应头
 > 扩展地址: https://chrome.google.com/webstore/detail/http-headers/mhbpoeinkhpajikalhfpjjafpfgjnmgk?hl=zh-CN
 

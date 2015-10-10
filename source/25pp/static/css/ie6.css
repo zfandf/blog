@@ -1,0 +1,83 @@
+@charset "utf-8";
+/*!
+ *  Item: android_applist 25pp资源站安卓分站-IE6专属样式表
+ *  Copyright:  Teiron Network Technology Co.,Ltd
+ *  Author: camille
+ *  Update: camille(2013.07.12)
+ */
+
+
+/* 筛选结果 列表 */
+.resultlist dl dt .cover {background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/ie6/cover.png", sizingMethod="scale")');}
+.thelist .app_downl .good_span { background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -497px;}
+.thelist .app_downl .bad_span { background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -572px;}
+/* 首页 */
+.iso{background: url("apple-ico.png")/*tpa=http://android.25pp.com/static/images/ie6/apple-ico.png*/ no-repeat 8px 7px;}
+.android_on{background:#fff url("android-ico.png")/*tpa=http://android.25pp.com/static/images/ie6/android-ico.png*/ no-repeat 10px 7px;}
+#menu dd a.more{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 33px -110px;}
+.recommend .reList dl dt .cover {background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/ie6/cover.png", sizingMethod="scale")');}
+.gameRank .detailTxt .pic .cover {background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/ie6/cover1.png", sizingMethod="scale")');}
+.hotSort .sortSoft dd .pic .cover {background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/cover1.png", sizingMethod="scale")');}
+#searchRight .search a{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 7px -84px;}
+.home-title a.more{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -395px; float: right;}
+.home-title a.more:hover{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -362px;}
+.specialTopic .more{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 190px -362px;}
+.wAutoTitle a.more{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -395px;}
+.wAutoTitle a.more:hover{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -362px;}
+.game-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -123px;}
+.software-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -170px;}
+.news-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -220px;}
+.hot-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 15px -263px;}
+.pic-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 15px -317px;}
+.gameRank ul.gameBox li.gameMore{background: #fbfbfa url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 165px -397px;}
+.gameRank .detailTxt p a{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -530px;}
+.boutApp .cover{background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/ie6/cover1.png", sizingMethod="scale")');}
+.gameRank .detailTxt p .game-good{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -530px;}
+#searchRight i{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat;}
+#searchRight #searchTypeIco{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -21px -42px;}
+.specialTopic .boutApp .appMore{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 190px -362px;}
+.specialTopic .boutApp .appMore:hover{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 190px -993px;}
+.gameRank .detailTxt .txt .dowBtn{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -30px -64px;}
+.gameRank .detailTxt .txt .dowBtn:hover{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -28px -87px; background-color: red;}
+#footer .friendlink .friendR .more{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -75px 30px;}
+#footer .friendlink .friendR .noMore{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -83px -22px; display: none;}
+
+/*产品详情页*/
+.title-stat .pic .cover{background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/ie6/cover140-140.png", sizingMethod="scale")');}
+.topicReco .more{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -395px;}
+.topicReco a.more:hover{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -362px;}
+.userLike dl dt .cover {background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/ie6/cover60-60.png", sizingMethod="scale")');}
+.comment-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 15px -627px;}
+.detailContent .gameNews li{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -663px;}
+.good-ico{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -532px;}
+.bad-ico{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -606px;}
+.userLike dl dd.app_downl .good a { background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -497px;}
+.userLike dl dd.app_downl .good a:hover {background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -534px;}
+.userLike dl dd.app_downl .bad span { background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -571px;}
+.userLike dl dd.app_downl .good span { background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -534px;}
+.comment-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 15px -627px;}
+
+/*专题推荐*/
+.topic-ico{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 15px -827px;}
+.date{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 10px -871px;}
+.number{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 10px -898px;}
+.thelist .app_icon .cover{background:none;filter:expression('progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' + currentPageImagesPath + 'images/ie6/cover.png", sizingMethod="scale")');}
+.greenDate{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -932px;}
+.greenNumber{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -960px;}
+.grayDate{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 10px -871px;}
+.grayNumber{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 10px -898px;}
+
+/*铃声壁纸*/
+.numIco1{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -241px;}
+.numIco2{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -285px;}
+.numIco3{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -329px;}
+.numIco4{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -372px;}
+.numIco5{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -417px;}
+.numIco6{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -461px;}
+.numIco7{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -505px;}
+.numIco8{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -549px;}
+.numIco9{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -594px;}
+.numIco10{ background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -170px -628px;}
+.callRing .top10{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -63px 12px;}
+.thelist .wp_downl .good { background:url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat -92px -421px; }
+.choosenav .more{background: url("../images/public-ico.jpg")/*tpa=http://android.25pp.com/static/images/ie6/public-ico.jpg*/ no-repeat 0 -395px;}

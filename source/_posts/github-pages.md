@@ -3,6 +3,7 @@ title: 使用Github Pages建独立博客
 date: 2015-02-09 08:40:51
 comments: true
 categories:
+- 工具
 tags:	
 ---
 

@@ -3,8 +3,9 @@ title: JsCover
 date: 2015-09-16 09:52
 comments: true
 categories:
-- test
+- 前端
 tags:
+- test
 ---
 
 ## JSCover

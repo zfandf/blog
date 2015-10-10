@@ -1,9 +1,9 @@
 title: jshint
 date: 2015-02-03 08:22:14
 categories:
-- JavaScript
+- 前端
 tags:
-- JavaScript
+- js
 ---
 # jshint
 

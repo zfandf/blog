@@ -1,9 +1,8 @@
 title: JavaScript 设计模式 - Contructor (构造器) 模式
 date: 2015-02-09 08:40:51
 categories:
-- JavaScript
+- 前端
 tags:
-- JavaScript
 - Javascript Design Pattern
 ---
 

@@ -1,7 +1,7 @@
 title: Node.js 入门经典 第六章 Express 介绍
 date: 2015-10-07 13:16:49
 categories:
-- js
+- 前端
 tags:
 - Node.js 入门经典
 ---

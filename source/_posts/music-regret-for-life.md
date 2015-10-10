@@ -1,6 +1,9 @@
 title: Music-后会无期
 date: 2015-01-31 08:34:19
-tags: Music
+categories:
+- 杂项
+tags: 
+- music
 ---
 
 当一艘船沉入海底

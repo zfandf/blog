@@ -1,6 +1,9 @@
 title: Music-笑忘书
 date: 2015-02-12 08:38:35
-tags: Music
+categories:
+- 杂项
+tags: 
+- music
 ---
 
 没 没有蜡烛 就不用勉强庆祝

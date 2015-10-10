@@ -1,9 +1,9 @@
 title: String.prototype.replace() 用法
 date: 2015-03-26 11:11:04
 categories:
-- JavaScript
+- 前端
 tags:
-- JavaScript
+- js
 ---
 
 # String.prototype.replace()
