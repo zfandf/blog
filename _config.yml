@@ -62,9 +62,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## git clone https://github.com/wuchong/jacman.git themes/jacman
-theme: jacman
+## git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+theme: yilia
 stylus:
   compress: true
+
+#### 评论
+duoshuo_shortname: ffloveblog ## e.g. wuchong   your duoshuo short name.
+disqus_shortname:  ## e.g. wuchong   your disqus short name.
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
