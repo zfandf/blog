@@ -27,10 +27,10 @@ rss: /atom.xml ## RSS address.
 #### 图片
 imglogo:
   enable: true             ## 头部 logo 是否显示 true/false.
-  src: img/icon.png        ## 图片格式：`.svg` and `.png`, 图片位置在 source/img 中
+  src: img/f.png        ## 图片格式：`.svg` and `.png`, 图片位置在 source/img 中
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.
 apple_icon: img/favicon.ico ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
-author_img: /img/icon.png   ## size:220px*220px. 显示作者头像. 如果不想显示，请不要设置此项。
+author_img: /img/f.png   ## size:220px*220px. 显示作者头像. 如果不想显示，请不要设置此项。
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 ### Theme Color
 theme_color:
