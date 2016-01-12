@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 初见
+title: 只如初见
 subtitle:
 description: Fannie 的个人博客, 一个新的开始哦
 author: Fannie
@@ -63,7 +63,7 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## git clone https://github.com/wuchong/jacman.git themes/jacman
 ## git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
-theme: yilia
+theme: fannie
 stylus:
   compress: true
 
