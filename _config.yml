@@ -70,7 +70,7 @@ theme: fannie
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/zfandf/zfandf.github.io.git
+  repo: git@github.com:zfandf/zfandf.github.io.git
   branch: master
   message:
 
