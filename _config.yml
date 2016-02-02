@@ -4,7 +4,7 @@
 
 # Site
 title: 如初见
-subtitle:
+subtitle: 人生若只如初见
 description: Fannie 的个人博客, 一个新的开始哦
 author: Fannie
 language: zh-CN
@@ -17,7 +17,7 @@ root: /
 permalink: post/:title/
 permalink_defaults:
 
-# 目录
+# Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -40,6 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -64,41 +65,15 @@ pagination_dir: page
 ## git clone https://github.com/wuchong/jacman.git themes/jacman
 ## git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 theme: fannie
-stylus:
-  compress: true
-
-#### 评论
-duoshuo_shortname: ffloveblog ## e.g. wuchong   your duoshuo short name.
-disqus_shortname:  ## e.g. wuchong   your disqus short name.
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-## git clone https://github.com/A-limon/pacman.git themes/pacman
 deploy:
   type: git
   repo: https://github.com/zfandf/zfandf.github.io.git
   branch: master
   message:
 
-# Others
-index_generator:
-  per_page: 5 ##首页默认几篇文章标题 如果值为0不分页
-
-archive_generator:
-    per_page: 20 ##归档页面默认20篇文章标题
-    yearly: true  ##生成年视图
-    monthly: true ##生成月视图
-
-tag_generator:
-    per_page: 0 ##标签分类页面默认10篇文章
-
-category_generator:
-    per_page: 0 ###分类页面默认10篇文章
-
-feed:
-    type: atom ##feed类型 atom或者rss2
-    path: atom.xml ##feed路径
-    limit: 20  ##feed文章最小数量
-
-skip_render:
-    - '25pp/**'
+#### 评论
+duoshuo_shortname: ffloveblog ## e.g. wuchong   your duoshuo short name.
+disqus_shortname:  ## e.g. wuchong   your disqus short name.

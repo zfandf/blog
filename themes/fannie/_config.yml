@@ -28,8 +28,8 @@ rss: /atom.xml ## RSS address.
 imglogo:
   enable: true             ## 头部 logo 是否显示 true/false.
   src: img/f.png        ## 图片格式：`.svg` and `.png`, 图片位置在 source/img 中
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.
-apple_icon: img/favicon.ico ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+favicon: img/f.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.
+apple_icon: img/f.ico ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: /img/f.png   ## size:220px*220px. 显示作者头像. 如果不想显示，请不要设置此项。
 banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 ### Theme Color
@@ -44,7 +44,7 @@ index:
 #### Author information 作者信息
 author:
   intro_line1:  "人生若只如初见"    ## 页面底部关于自己的介绍
-  intro_line2:  "对技术，要保持初见的感觉，怦然心动，热情如火"  ## 第二行
+  intro_line2:  "何时何事，保持初见的感觉，怦然心动，热情如火"  ## 第二行
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:     ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
