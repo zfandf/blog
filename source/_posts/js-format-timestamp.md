@@ -47,7 +47,7 @@ tags:
 	 		'yyyy.MM.dd hh:mm:ss'
 	 * @returns 十位时间戳 
 	 **/
-	function dateToTimestamp(date) {
+	function dateToTimestamp(date) {  
 		var arr = date.replace(/ |:|\/|\./g, '-').split('-');
 		date = new Date(arr[0], arr[1] - 1, arr[2], arr[3]||0, arr[4]||0, arr[5]||0);
 		return Date.parse(date) / 1000;

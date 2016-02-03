@@ -1,5 +1,5 @@
 layout:
-title: select 样式重定义	
+title: select 样式重定义
 date: 2015-01-27 08:40:51
 categories:
 - 前端
